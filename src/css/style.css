@@ -1,0 +1,62 @@
+body {
+    background-color: var(--background-color);
+}
+
+body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body main .container {
+    background-color: var(--card-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+    font-size: 28px;
+    max-width: 550px;
+}
+
+body main .container h2 {
+    color:  var(--dice-color);
+    font-size: 16px;
+    margin: 30px 0 20px 0;
+}
+
+body main .container p {
+    color: var(--text-color);
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    font-size: 28px;
+}
+
+body main .container .bars {
+    margin: 10px 0 20px 0;
+}
+
+body main .container .icon {
+    background-color: var(--dice-color);
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+}
+
+body main .container .icon img {
+    width: 20px;
+}
+
+body main .container .icon:hover {
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--dice-color);
+    transition: 0.2s;
+}
